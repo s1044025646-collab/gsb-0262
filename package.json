@@ -1,0 +1,23 @@
+{
+  "name": "point24-exact",
+  "version": "1.0.0",
+  "description": "二十四点精确表达式求解与验算后端（TypeScript + Node.js + SQLite）",
+  "type": "module",
+  "main": "dist/src/server.js",
+  "bin": {
+    "p24": "dist/src/cli.js"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/src/server.js",
+    "demo": "node dist/src/cli.js demo",
+    "test": "tsc -p tsconfig.json && node --test --test-reporter=spec dist/test/index.test.js"
+  },
+  "engines": {
+    "node": ">=22.5.0"
+  },
+  "devDependencies": {
+    "@types/node": "^25.0.0",
+    "typescript": "^5.9.0"
+  }
+}
